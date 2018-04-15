@@ -1,0 +1,113 @@
+<!-- import the static files  -->
+
+{% load staticfiles  %}
+<link rel="stylesheet" type="text/css" href="{% static 'homepage/style.css' %}" />
+
+<body>
+	<div id="first" >
+
+		<div id="first_left">
+			<div id="div1">
+				<img src="{% static 'homepage/images/logo.jpg' %}">
+			</div>
+			<div id="div2">
+				<br>
+				<span style="color: #474c4f;">I I T &nbsp  B O M B A Y</span><br>
+				<span style="color: #2a8fc9;">Complaint Management System</span>
+			</div>
+		</div>
+		<div id="first_right">
+			<br><br><br>
+			<a class="headerLink" href="#">Site User Login</a>
+			<a class="headerLink" href="#">Contact Us</a>
+		</div>
+	</div>
+	<div id="second" >
+		<div id="second_left">
+			<div class="g1">
+				Use this for complaints on IITB campus regarding:
+			</div>
+			<div class="g2">
+				Civil Maintenance
+			</div>
+			<div class="g3">
+				Electrical Maintenance
+			</div>
+			<div class="g2">
+				Public Health Office
+			</div>
+			<div class="g3">
+				Telephone
+			</div>
+			<div class="g2">
+				Horticulture
+			</div>
+		</div>
+		<div id="second_right">
+			<br><br><br><br>
+			<center>
+			<form action="{% url 'login' %}" method="POST">
+				{% csrf_token %}
+				<input class="c1" type="text" name="username" placeholder="Username"><br>
+			  	<input class="c1" type="password" name="password" placeholder="Password"><br><br>
+			  	<input class="c2" type="submit" value="Submit">
+			</form>
+			</center>
+		</div>
+	</div>
+	<div id="third" >
+		<center><h1 style="color: #393d3a;font-family: helvetica;margin-top: 30px;">Five Simple Steps to lodge a complaint</h1></center>
+	</div>
+	<div id="fourth" >
+		<div id="fourth1">
+			<center>
+				<h2 style="color: blue;">1. Login</h2>
+				<span>Login with your ldap id and password. If you do not have ldap id yet, your mobile number can be used (only) if you are on IITB internal network. For mobile based login, OTP verification is mandatory. </span>
+			</center>
+		</div>
+		<div id="fourth2">
+			<center>
+				<h2 style="color: blue;">2. Provide Complaint Details</h2>
+				<span>You may choose to share with us your mobile number if you wish to receive SMS notifications. We need your name in case you have used mobile based login. Your intercom phone contact is required as JE/complaint attendant may need to contact you for additional details.</span>
+			</center>
+		</div>
+		<div id="fourth3">
+			<center>
+				<h2 style="color: blue;">3. Choose Complaint type</h2>
+				<span>Click at desired radio button and select broad nature of complaint.</span>
+			</center>
+		</div>
+		<div id="fourth4">
+			<center>
+				<h2 style="color: blue;">4. Complaint location</h2>
+				<span>System shall prompt last used complaint locations. Use drop-down lists provided below to choose alternate complaint location.</span>
+			</center>
+		</div>
+		<div id="fourth5">
+			<center>
+				<h2 style="color: blue;">5. Describe and Submit</h2>
+				<span>Select category of complaint from drop-down list prompted by the system. Provide additional details in the 'Complaint description' textbox and submit.</span>
+			</center>
+		</div>
+	</div>
+	<div id="fifth" >
+	<br><br>
+		<center>
+
+			<span style="text-decoration: underline;">Contact Us</span><br>
+			<br>
+			Extension no: 3011, 3021, 3031<br>
+			Monday to Friday (10 AM to 6 PM)<br>
+			Email at: helpdesk.maint@iitb.ac.in<br>
+
+		</center>
+	</div>
+	<div id="sixth" >
+	<br><br>
+		<center>
+			<span>&copy 2017 All rights reserved, IIT Bombay
+			</span>
+		</center>
+	</div>
+</body>
+</html>

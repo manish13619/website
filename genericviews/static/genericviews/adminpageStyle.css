@@ -1,0 +1,28 @@
+.table_style{
+    margin-top : 10px;
+    border : 1px solid black;
+    width : 800px;
+    height : 100%;
+    text-align : center;
+}
+.tableHeader_row{
+    height : 30px;
+    font-size : 20px;
+    font-weight : bold;
+}
+.table_row{
+    height : 20px;
+    font-weight : bolder;
+}
+.table_row a{
+    text-decoration : none;
+    color : green;
+    font-size : 18px;
+}
+.table_row a:hover{
+    color : #0725bc;
+    font-weight : bold;
+}
+.table_row a:visited {
+    color: #725f3d;
+}

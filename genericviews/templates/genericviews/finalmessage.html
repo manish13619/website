@@ -1,0 +1,16 @@
+<!-- import the static files  -->
+{% extends "genericviews/base.html" %}
+
+{% block content %}
+
+{% load staticfiles  %}
+<link rel="stylesheet" type="text/css" href="{% static 'genericviews/complaintStyle.css' %}" />
+
+<body>
+    <center>
+        <h2>Your complaint has been recorded..</h2><br><br>
+        <h3>{{message}}</h3>
+    </center>
+</body>
+
+{% endblock %}

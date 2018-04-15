@@ -1,0 +1,25 @@
+<!-- import the static files  -->
+{% extends "genericviews/base.html" %}
+
+{% block content %}
+
+{% load staticfiles  %}
+<link rel="stylesheet" type="text/css" href="{% static 'genericviews/complaintStyle.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'genericviews/detailsStyle.css' %}" />
+
+<body>
+
+    <center>
+        <h1>Name : <span class="userDetails">{{ product.name }}</span></h1>
+        <h3>Roll No : <span class="userDetails">{{ product.rollNo}}</span></h3>
+        <h3>Mobile : <span class="userDetails">{{ product.mobile}}</span></h3>
+        <h3>Complaint Type : <span class="userDetails">{{ product.complaintType}}</span></h3>
+        <h3>Hostel No: <span class="userDetails">{{ product.hostelNo}}</span></h3>
+        <h3>Wing : <span class="userDetails">{{ product.wing}}</span></h3>
+        <h3>Room No :<span class="userDetails"> {{ product.roomNo}}</span></h3>
+        <h3>Complaint Title : <span class="userDetails">{{ product.complaintTitle}}</span></h3>
+        <h3>Complaint Description : <span class="userDetails">{{ product.complaintDesc}}</span></h3>
+    </center>
+</body>
+
+{% endblock %}

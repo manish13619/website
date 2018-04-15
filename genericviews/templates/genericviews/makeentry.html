@@ -1,0 +1,26 @@
+<!-- import the static files  -->
+{% extends "genericviews/base.html" %}
+
+{% block content %}
+
+{% load staticfiles  %}
+<link rel="stylesheet" type="text/css" href="{% static 'genericviews/complaintStyle.css' %}" />
+
+<body>
+
+    <div id="complaintFormId">
+        <div id="form_container">
+            <h2>Register Your Complaints Here...</h2>
+
+            <form action="" method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <center>
+                <input class="btn" type="submit" value="Submit">
+                </center>
+            </form>
+        </div>
+    </div>
+</body>
+
+{% endblock %}

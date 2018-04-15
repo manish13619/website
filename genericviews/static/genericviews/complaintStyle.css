@@ -1,0 +1,166 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	background-color : #d9e5f9 ;
+}
+#complaintFormId{
+
+    border: 1px solid red;
+    margin-top : 30px;
+    margin-left : 50px;
+    height : 1000px;
+    width : 95%;
+    background-color : #8c9aaf;
+    position : relative;
+}
+#form_container{
+    border : 0px solid green;
+    height : 100%;
+    width : 100%;
+    margin-left : 30px;
+    margin-top : 30px;
+
+}
+#id_name{
+    padding-left : 5px;
+    color : green;
+    height : 27px;
+    width : 300px;
+    font-weight : bold;
+    font-size : 17px;
+    text-align : center;
+    border : 1px solid black;
+    margin-left : 10px;
+}
+#id_rollNo{
+    padding-left : 5px;
+    color : green;
+    height : 27px;
+    width : 300px;
+    font-weight : bold;
+    font-size : 17px;
+    text-align : center;
+    border : 1px solid black;
+    margin-left : 10px;
+}
+#id_mobile{
+    padding-left : 5px;
+    color : green;
+    height : 27px;
+    width : 300px;
+    font-weight : bold;
+    font-size : 17px;
+    text-align : center;
+    border : 1px solid black;
+    margin-left : 10px;
+}
+#id_complaintType{
+    padding-left : 5px;
+    color : green;
+    height : 27px;
+    width : 300px;
+    font-weight : bold;
+    font-size : 17px;
+    text-align : center;
+    border : 1px solid black;
+    margin-left : 10px;
+}
+#id_hostelNo{
+    padding-left : 5px;
+    color : green;
+    height : 27px;
+    width : 300px;
+    font-weight : bold;
+    font-size : 17px;
+    text-align : center;
+    border : 1px solid black;
+    margin-left : 10px;
+}
+#id_wing{
+    padding-left : 5px;
+    color : green;
+    height : 27px;
+    width : 300px;
+    font-weight : bold;
+    font-size : 17px;
+    text-align : center;
+    border : 1px solid black;
+    margin-left : 10px;
+}
+#id_roomNo{
+    padding-left : 5px;
+    color : green;
+    height : 27px;
+    width : 300px;
+    font-weight : bold;
+    font-size : 17px;
+    text-align : center;
+    border : 1px solid black;
+    margin-left : 10px;
+}
+#id_complaintTitle{
+    padding-left : 5px;
+    color : green;
+    height : 27px;
+    width : 400px;
+    font-weight : bold;
+    font-size : 17px;
+    text-align : center;
+    border : 1px solid black;
+    margin-left : 10px;
+}
+#id_compalintDesc{
+    padding-left : 5px;
+    color : green;
+    height : 200px;
+    width : 400px;
+    font-weight : bold;
+    font-size : 17px;
+    border : 1px solid black;
+    margin-left : 10px;
+}
+textarea {
+    resize: none;
+}
+.btn{
+	border: 1px solid black;
+	border-radius: 5px;
+	width: 150px;
+	height: 40px;
+	line-height: 35px;
+	font-size: 25px;
+}
+.btn:hover{
+	background-color: black;
+	color: white;
+}
+
+#header_div{
+	width: 100%;
+	height: 150px;
+	border : 1px solid blue;
+	position: relative;
+	background-color: #1156c4;
+}
+#logo{
+	border: 0px solid red;
+	height : 125px;
+	width: 125px;
+	margin-top: 10px;
+	margin-left: 30px;
+	float: left;
+}
+img{
+	max-width: 125px;
+	max-height: 125px;
+}
+#title_text{
+	border: 0px solid red;
+	width : 1000px;
+	height : 100%;
+	margin-top: 40px;
+	font-weight: bold;
+	font-size: 45px;
+	color: black;
+	opacity: 0.67;
+}

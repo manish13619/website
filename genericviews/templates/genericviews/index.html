@@ -1,0 +1,37 @@
+<!-- import the static files  -->
+{% extends "genericviews/base.html" %}
+
+{% block content %}
+
+{% load staticfiles  %}
+<link rel="stylesheet" type="text/css" href="{% static 'genericviews/complaintStyle.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'genericviews/adminpageStyle.css' %}" />
+
+<body>
+    <center>
+        {% if product_list %}
+             <table class="table_style" border="1" cellpadding="0" cellspacing="0">
+                  <tr class="tableHeader_row">
+                    <th>Hostel</th>
+                    <th>Roll No</th>
+                      <th>Complaint Type</th>
+                  </tr>
+                    {% for product in product_list %}
+                        <tr class="table_row">
+                            <td> {{ product.hostelNo }} </td>
+                            <td> <a href="{% url 'genericviews:detail' product.id %}">{{ product.rollNo }}</a> </td>
+                            <td> {{ product.complaintType }} </td>
+                        </tr>
+                    {% endfor %}
+
+
+             </table>
+            {#  In case  no product exists.  #}
+            {% else %}
+            <h3> No complaints found.</h3>
+        {% endif %}
+    </center>
+</body>
+
+
+{% endblock %}
