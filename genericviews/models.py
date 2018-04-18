@@ -18,3 +18,5 @@ class Product(models.Model):
         return self.rollNo + "_" + str(self.id);
 
 
+    def __getrollno__(self):
+        return self.rollNo;
