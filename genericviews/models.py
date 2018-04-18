@@ -20,3 +20,6 @@ class Product(models.Model):
 
     def __getrollno__(self):
         return self.rollNo;
+
+    def __getname__(self):
+        return self.name;
